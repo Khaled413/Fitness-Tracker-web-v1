@@ -1,6 +1,6 @@
 
 # Fitness Tracker Demo - Web Edition
-![image](https://github.com/user-attachments/assets/2cd5fd02-d910-4a19-b75f-64fac9867660)
+![image](https://github.com/user-attachments/assets/09b6c732-0cd9-40d5-a38d-1de569dd051b)
 ![image](https://github.com/user-attachments/assets/c89c30a7-1c69-4c33-a919-d94407297ace)
 A real-time fitness tracking web application that uses TensorFlow.js and pose detection to monitor exercise form, count repetitions, and provide feedback for various exercises using your webcam .
 
