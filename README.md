@@ -53,3 +53,6 @@ All pose estimation runs **entirely in-browser**. No video or data is uploaded â
 ```bash
 git clone https://github.com/Ma7moud12975/Fitness-Tracker-web-v1.git
 cd Fitness-Tracker-web-v1
+```bash
+ğŸ“¥ Install dependencies
+npm install
