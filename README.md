@@ -1,4 +1,5 @@
-# 🏋️‍♂️ Fitness Tracker Demo - Web Edition
+# ![favicon](https://github.com/user-attachments/assets/d3d32c3c-8253-4596-aac6-7fe1b40ab2b1)
+ Fitness Tracker Demo - Web Edition
 
 ![Live Demo Screenshot](https://github.com/user-attachments/assets/09b6c732-0cd9-40d5-a38d-1de569dd051b)
 ![Live Demo Screenshot](https://github.com/user-attachments/assets/c89c30a7-1c69-4c33-a919-d94407297ace)
