@@ -24,14 +24,12 @@ A real-time fitness tracking web application that uses TensorFlow.js and pose de
 All processing happens locally in your browser. No video data is stored or sent to any server, ensuring your privacy is protected.
 
 ## Supported Exercises
-![image](https://github.com/user-attachments/assets/d41b55d2-d4b7-4f6b-8bdb-d389a9238bd8)
-
 - Squats
 - https://i.pinimg.com/originals/42/52/27/425227c898782116a5955666be277885.gif
 - Bicep Curls
 - https://i.pinimg.com/originals/68/4d/50/684d50925eabbdf60f66d4bf7013c9ef.gif
 - Push-ups
-- https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2RtcjdoNGxzaGE2dHJwM3hxaHplMnhwcGNjc2VoNHF0Z2VuZ25wNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7lugb7ObGYiXe/giphy.gif
+https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2RtcjdoNGxzaGE2dHJwM3hxaHplMnhwcGNjc2VoNHF0Z2VuZ25wNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7lugb7ObGYiXe/giphy.gif
 - Pull-ups
 - https://tunturi.org/Blogs/2022/09-pull-up.gif
 
