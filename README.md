@@ -24,7 +24,7 @@ A real-time fitness tracking web application that uses TensorFlow.js and pose de
 All processing happens locally in your browser. No video data is stored or sent to any server, ensuring your privacy is protected.
 
 ## Supported Exercises
-![image](https://github.com/user-attachments/assets/d24c951a-b80f-4edd-98ee-d5b0334e7cc1)
+![image](https://github.com/user-attachments/assets/d41b55d2-d4b7-4f6b-8bdb-d389a9238bd8)
 
 - Squats
 - Push-ups
