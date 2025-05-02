@@ -14,6 +14,7 @@
 - 🔁 **Repetition Counting** – via angle thresholds and state machine logic.
 - 🛡️ **Form Feedback** – real-time correction cues for safer workouts.
 - 🧾 **Exercise Library** – supports multiple common exercises.
+- 💬 **Assistant Chatbot** – built-in chatbot to guide users, answer questions, and suggest form improvements or workout tips during your session.
 
 ---
 
