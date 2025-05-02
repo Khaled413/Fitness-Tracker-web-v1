@@ -53,6 +53,36 @@ All pose estimation runs **entirely in-browser**. No video or data is uploaded �
 ```bash
 git clone https://github.com/Ma7moud12975/Fitness-Tracker-web-v1.git
 cd Fitness-Tracker-web-v1
+```
+
+### 2. 📥 Install dependencies
+
 ```bash
-📥 Install dependencies
 npm install
+```
+
+### 3. 🧪 Start the dev server
+
+```bash
+npm run dev
+```
+
+### 4. 🌐 Open the app
+
+Go to [http://localhost:3000](http://localhost:3000) in your browser.
+
+### 5. 🎥 Allow camera access
+
+When prompted, **allow** access to your webcam to enable pose detection.
+
+### 6. 🏋️ Start exercising!
+
+Choose your exercise, get in position, and the tracker will do the rest!
+
+---
+
+## 🌟 Inspiration
+
+This project was inspired by the Python-based [Fitness Tracker Pro](https://github.com/a1harfoush/Fitness_Tracker_Pro), adapted for the modern web using JS and TensorFlow.js.
+
+![Inspiration](https://github.com/user-attachments/assets/3c369613-96d2-48a4-b302-b330bd863fec)
