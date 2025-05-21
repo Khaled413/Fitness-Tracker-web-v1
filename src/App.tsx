@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'; // Import useState and useEffect
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -72,20 +73,22 @@ const AppRoutes = () => {
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
-      <AuthProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner closeButton />
-          {/* Add the background div with the new class */}
-          <div className="fixed inset-0 -z-10 main-background-image"></div> 
-          <div className="relative z-10 min-h-screen">
-            {/* Main content area - background is now transparent or uses card styles */}
-            <BrowserRouter>
-              <AppRoutes />
-            </BrowserRouter>
-          </div>
-        </TooltipProvider>
-      </AuthProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner closeButton />
+        {/* Add the background div with the new class */}
+        <div className="fixed inset-0 -z-10 main-background-image"></div> 
+        <div className="relative z-10 min-h-screen">
+          {/* Main content area - background is now transparent or uses card styles */}
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              {/* Add other routes here */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      </TooltipProvider>
     </ThemeProvider>
   </QueryClientProvider>
 );
