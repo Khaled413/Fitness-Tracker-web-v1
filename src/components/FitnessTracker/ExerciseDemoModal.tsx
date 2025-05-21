@@ -22,12 +22,14 @@ const ExerciseDemoModal: React.FC<ExerciseDemoModalProps> = ({
   const exercise = EXERCISES[exerciseType];
   
   // Exercise GIF sources provided by the user
+  // Exercise GIF sources provided by the user
   const exerciseImages: Record<ExerciseType, string> = {
     [ExerciseType.SQUAT]: "https://i.pinimg.com/originals/42/52/27/425227c898782116a5955666be277885.gif",
     [ExerciseType.BICEP_CURL]: "https://i.pinimg.com/originals/68/4d/50/684d50925eabbdf60f66d4bf7013c9ef.gif",
     // [ExerciseType.SHOULDER_PRESS]: "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2RtcjdoNGxzaGE2dHJwM3hxaHplMnhwcGNjc2VoNHF0Z2VuZ25wNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7lugb7ObGYiXe/giphy.gif", // Removed
     [ExerciseType.PUSH_UP]: "https://i.pinimg.com/originals/fd/bb/09/fdbb092b58863e5c86fdb8bb1411fcea.gif",
     [ExerciseType.PULL_UP]: "https://tunturi.org/Blogs/2022/09-pull-up.gif",
+    [ExerciseType.FORWARD_LUNGE]: "/Forward Lunge.gif", // Adding GIF for Forward Lunge
     [ExerciseType.NONE]: "", // Keep NONE or handle appropriately
   };
   
@@ -38,6 +40,7 @@ const ExerciseDemoModal: React.FC<ExerciseDemoModalProps> = ({
     // [ExerciseType.SHOULDER_PRESS]: "https://www.inspireusafoundation.org/wp-content/uploads/2022/03/dumbbell-overhead-press.jpg", // Removed
     [ExerciseType.PUSH_UP]: "https://www.inspireusafoundation.org/wp-content/uploads/2022/02/push-up-movement.jpg",
     [ExerciseType.PULL_UP]: "https://www.inspireusafoundation.org/wp-content/uploads/2022/02/pull-up-movement.jpg",
+    [ExerciseType.FORWARD_LUNGE]: "https://www.inspireusafoundation.org/wp-content/uploads/2022/03/forward-lunge.jpg", // Adding static fallback image
     [ExerciseType.NONE]: "", // Keep NONE or handle appropriately
   };
   

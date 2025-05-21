@@ -1,10 +1,32 @@
 import React from "react";
 import FitnessTracker from "@/components/FitnessTracker/FitnessTracker";
 import { ModeToggle } from "@/components/ui/mode-toggle";
-import { Dumbbell, Github } from "lucide-react";
+import { Dumbbell, LogOut } from "lucide-react";
 import Chatbot from "@/components/FitnessTracker/Chatbot";
+import { Button } from "@/components/ui/button";
+import { useAuth } from "@/lib/auth";
+import { useToast } from "@/components/ui/use-toast";
 
 const Index = () => {
+  const { signOut, user } = useAuth();
+  const { toast } = useToast();
+
+  const handleSignOut = async () => {
+    try {
+      await signOut();
+      toast({
+        title: "Signed out",
+        description: "You have been successfully signed out",
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to sign out",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -15,14 +37,19 @@ const Index = () => {
             <h1 className="text-xl font-bold">Fitness Tracker Pro</h1>
           </div>
           <div className="flex items-center gap-4">
-            <a 
-              href="https://github.com/a1harfoush/Fitness_Tracker_Pro" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+            {user && (
+              <div className="text-sm mr-2">
+                Welcome, {user.user_metadata?.full_name || user.email}
+              </div>
+            )}
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={handleSignOut}
+              title="Sign out"
             >
-              <Github className="h-5 w-5" />
-            </a>
+              <LogOut className="h-5 w-5" />
+            </Button>
             <ModeToggle />
           </div>
         </div>

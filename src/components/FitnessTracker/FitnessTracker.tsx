@@ -48,13 +48,14 @@ const FitnessTracker: React.FC<FitnessTrackerProps> = ({ className }) => {
   const [uploadedVideo, setUploadedVideo] = useState<HTMLVideoElement | null>(null);
   const [videoError, setVideoError] = useState<string | null>(null);
   const [showExerciseDemo, setShowExerciseDemo] = useState(false);
-  const [exerciseStates, setExerciseStates] = useState<Record<ExerciseType, ExerciseState>>({
+  const [exerciseStates, setExerciseStates] = useState<Record<ExerciseType, ExerciseState>>({    
     [ExerciseType.NONE]: initExerciseState(ExerciseType.NONE),
     [ExerciseType.SQUAT]: initExerciseState(ExerciseType.SQUAT),
     [ExerciseType.BICEP_CURL]: initExerciseState(ExerciseType.BICEP_CURL),
     // [ExerciseType.SHOULDER_PRESS]: initExerciseState(ExerciseType.SHOULDER_PRESS), // Removed
     [ExerciseType.PUSH_UP]: initExerciseState(ExerciseType.PUSH_UP),
     [ExerciseType.PULL_UP]: initExerciseState(ExerciseType.PULL_UP),
+    [ExerciseType.FORWARD_LUNGE]: initExerciseState(ExerciseType.FORWARD_LUNGE), // Add this line
   });
 
   useEffect(() => {
@@ -240,8 +241,6 @@ const FitnessTracker: React.FC<FitnessTrackerProps> = ({ className }) => {
 
     } catch (error) {
       console.error("Error processing frame:", error);
-      // Optionally add a toast notification for processing errors
-      // toast.error("Error processing frame");
     }
   };
 

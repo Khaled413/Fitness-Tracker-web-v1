@@ -200,14 +200,22 @@ export default function Chatbot() {
           <form
             className="flex items-center gap-2 border-t border-white/15 p-2 bg-black/50" // Adjusted input area style
             onSubmit={e => { e.preventDefault(); sendMessage(); }}
-          >
-            <input
-              className="flex-1 rounded-lg border border-white/20 bg-black/30 px-3 py-2 text-sm text-white/90 placeholder-white/50 focus:outline-none focus:ring-1 focus:ring-red-600" // Adjusted input style, focus ring
+            >
+            <textarea
+              className="flex-1 rounded-lg border border-white/20 bg-black/30 px-3 py-2 text-sm text-white/90 placeholder-white/50 focus:outline-none focus:ring-1 focus:ring-red-600 resize-none overflow-y-auto" // Added resize-none and overflow-y-auto
               placeholder="Type your message..."
               value={input}
               onChange={e => setInput(e.target.value)}
               disabled={loading}
               autoFocus
+              rows={1}
+              style={{ minHeight: '40px', maxHeight: '120px' }} // Set min and max height
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  sendMessage();
+                }
+              }}
             />
             <button
               type="submit"
